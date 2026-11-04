@@ -1,0 +1,21 @@
+# Normalize text files
+* text=auto eol=lf
+
+# Configuration and lock files
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.lock text eol=lf
+
+# Python source and validation scripts
+*.py text eol=lf
+*.pyi text eol=lf
+*.ps1 text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf

@@ -1,0 +1,53 @@
+# Editor settings
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local environment
+/.env
+/.env.*
+!/.env.example
+!/.env.template
+
+# Logs
+*.log
+
+# Local caches
+.cache/
+.uv-cache/
+__pycache__/
+
+# Python environment
+/.venv/
+/.venv*/
+/venv/
+
+# Python build output
+/**/__pycache__/
+/**/*.py[cod]
+/**/*.egg-info/
+/.eggs/
+/build/
+/dist/
+
+# Python test output
+/.pytest_cache/
+.coverage
+.coverage.*
+/coverage.xml
+/coverage.json
+/htmlcov/
+
+# mypy caches
+/.mypy_cache/
+
+# Ruff caches
+/.ruff_cache/
+
+# Project-specific rules and overrides
+/.daedalus/
+/.agents/
+AGENTS.md

@@ -1,0 +1,12 @@
+[git]
+remote = {{ settings.git.remote | tojson }}
+main = {{ settings.git.main | tojson }}
+
+[checks]
+commands = [
+  { name = "Pre-commit", command = "pre-commit run --all-files", retries = 1 },
+]
+
+[release]
+policy = {{ settings.release.policy | tojson }}
+prefix = {{ settings.release.prefix | tojson }}

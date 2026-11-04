@@ -1,0 +1,10 @@
+[git]
+remote = "origin"
+main = "main"
+
+[checks]
+commands = []
+
+[release]
+policy = "semver"
+prefix = "v"
