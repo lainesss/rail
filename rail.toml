@@ -1,0 +1,13 @@
+[git]
+remote = "origin"
+main = "main"
+
+[checks]
+commands = [
+  { name = "Tests", command = "uv run pytest --cov --cov-report=term-missing", retries = 1 },
+  { name = "Pre-commit", command = "pre-commit run --all-files", retries = 1 },
+]
+
+[release]
+policy = "semver"
+prefix = "v"

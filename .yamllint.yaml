@@ -1,0 +1,42 @@
+# baseline yamllint config for project YAML files
+# checks indentation, empty lines, and whitespace issues
+# allows long commands, regexes, URLs, and GitHub Actions `on`
+
+extends: default  # use the default yamllint rule set
+
+rules:
+  line-length: disable  # disable line length checks
+
+  document-start: disable  # do not require the `---` document start marker
+
+  truthy: disable  # allow truthy values used by configs and workflows
+
+  # indentation rules
+  indentation:
+    spaces: 2  # use 2 spaces for indentation
+    indent-sequences: true  # check indentation in sequences
+    check-multi-line-strings: false  # do not check indentation inside multiline strings
+
+  # inline comment rules
+  comments:
+    min-spaces-from-content: 1  # require at least 1 space before inline comments
+
+  # empty line rules
+  empty-lines:
+    max: 1  # allow at most 1 consecutive empty line
+    max-start: 0  # disallow empty lines at the beginning of files
+    max-end: 1  # allow at most 1 empty line at the end of files
+
+  new-line-at-end-of-file: enable  # require a newline at the end of files
+
+  trailing-spaces: enable  # disallow trailing spaces
+
+  # inline object rules: `{key: value}`
+  braces:
+    min-spaces-inside: 0  # allow 0 spaces inside `{}`
+    max-spaces-inside: 1  # allow at most 1 space inside `{}`
+
+  # inline list rules: `[a, b]`
+  brackets:
+    min-spaces-inside: 0  # allow 0 spaces inside `[]`
+    max-spaces-inside: 1  # allow at most 1 space inside `[]`
